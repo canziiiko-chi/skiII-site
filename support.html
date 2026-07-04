@@ -127,7 +127,7 @@
   <main>
     <article>
       <h1>skiII Support</h1>
-      <p class="meta">Last updated: June 22, 2026</p>
+      <p class="meta">Last updated: July 4, 2026</p>
       <p class="lead">Need help with skiII, found a bug, or want to send feedback? You can contact us through the channels below.</p>
       <div class="lang-switch">
         <a class="pill" href="#zh">中文</a>
@@ -153,11 +153,22 @@
           <li>你使用的设备型号和 iOS 版本</li>
           <li>问题发生的大致步骤</li>
           <li>截图或录屏，如果方便的话</li>
+          <li>App 内「设置 → 支持 → 导出诊断包」生成的诊断文件（只含设备与运行状态信息，不含笔记内容）</li>
           <li>是否发生在 TestFlight 版本，以及对应版本号</li>
         </ul>
 
         <h3>数据与备份提醒</h3>
-        <p>skiII 以本地数据为主。卸载 App 可能会删除本地数据。如果你正在测试重要内容，建议定期使用 App 内导出或备份功能保存数据。</p>
+        <p>skiII 以本地数据为主。卸载 App 可能会删除本地数据。如果你正在记录重要内容，建议定期使用 App 内导出或备份功能保存数据。</p>
+
+        <h3>iCloud 同步（Beta）常见问题</h3>
+        <ul>
+          <li>iCloud 同步是完整版（买断）功能，需要登录 iCloud 并开启 iCloud 云盘。</li>
+          <li>多台设备登录同一 Apple 账号并打开开关后，数据会自动同步；传输节奏由系统决定，通常为几秒到几分钟。</li>
+          <li>同步保持的是「最新状态」，不是历史快照；两台设备同时编辑同一张卡片时，较旧的一份会保存为冲突副本（iCloud 云盘 skiII 目录的 conflicts 文件夹）。</li>
+          <li>删除卡片会同步到其他设备的回收站，可随时恢复；灵感气泡只增不删，不会被同步删除。</li>
+          <li>重装 App 后重新打开同步开关，可以从 iCloud 恢复已同步的内容；回收站、手绘等不在同步范围。</li>
+          <li>同步不是备份：重要节点仍建议使用 App 内「导出全量备份」保存时间点快照。</li>
+        </ul>
 
         <h3>购买与退款</h3>
         <p>skiII 的 App Store 购买由 Apple 处理。如需退款或查看订单，请通过 Apple 的购买记录或 App Store 支持渠道处理。</p>
@@ -173,11 +184,22 @@
           <li>Your device model and iOS version</li>
           <li>The steps that led to the issue</li>
           <li>Screenshots or screen recordings, if available</li>
+          <li>The diagnostics file from Settings → Support → Export diagnostics bundle (device and runtime info only, no note content)</li>
           <li>Whether it happened in a TestFlight build and the build number</li>
         </ul>
 
         <h3>Data and backups</h3>
-        <p>skiII is local-first. Deleting the app may delete local app data. If you are testing important content, we recommend using the in-app export or backup features regularly.</p>
+        <p>skiII is local-first. Deleting the app may delete local app data. If you are keeping important content, we recommend using the in-app export or backup features regularly.</p>
+
+        <h3>iCloud sync (Beta) FAQ</h3>
+        <ul>
+          <li>iCloud sync is a full-version (one-time purchase) feature. It requires being signed in to iCloud with iCloud Drive enabled.</li>
+          <li>With the toggle on and the same Apple account on multiple devices, data syncs automatically; timing is controlled by the system and usually takes seconds to minutes.</li>
+          <li>Sync keeps the latest state, not historical snapshots. If two devices edit the same card at once, the older version is kept as a conflict copy (in the conflicts folder of the skiII directory in iCloud Drive).</li>
+          <li>Deleting a card moves it to the trash on other devices, where it can be restored. Inspiration bubbles are add-only and are never deleted by sync.</li>
+          <li>After reinstalling the app, turning sync back on restores synced content from iCloud. The trash and sketches are not included in sync.</li>
+          <li>Sync is not a backup: for important milestones, use the in-app full backup export to keep point-in-time snapshots.</li>
+        </ul>
 
         <h3>Purchases and refunds</h3>
         <p>App Store purchases for skiII are handled by Apple. For refunds or order history, please use Apple's purchase history or App Store support channels.</p>
